@@ -8,8 +8,8 @@ const app = express();
 const port = 3000;
 
 const run = async () => {
-  // db
   await mongoose.connect("mongodb://localhost:27017/", {});
+
   const admin = new AdminBro(options);
   const router = buildAdminRouter(admin);
 
