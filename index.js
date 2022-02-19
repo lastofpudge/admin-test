@@ -1,3 +1,1 @@
-const run = require("./src/server");
-
-run();
+require("./src/server");
